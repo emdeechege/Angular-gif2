@@ -1,3 +1,16 @@
-<p>
-  giphy works!
-</p>
+<div class="container">
+<h1>Giphy Search</h1>
+<hr>
+
+<input class="form-control" type="search" name="title" #searchTerm>
+<button class="btn btn-outline-success" (click)="performSearch(searchTerm)">Search</button>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs|sm|md|lg|xl-1-12" *ngFor="let gif of gifs">
+
+        <img class="z-depth-1 img-fluid img-thumbnail" src="{{gif}}" alt="">
+
+    </div>
+</div>
