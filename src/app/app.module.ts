@@ -5,6 +5,7 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { GiphyComponent } from './giphy/giphy.component';
+import { GifService } from './gif.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { GiphyComponent } from './giphy/giphy.component';
     HttpClientModule
   ],
 
-  providers: [],
+  providers: [GifService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
