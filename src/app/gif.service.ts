@@ -6,7 +6,8 @@ import{HttpClient} from '@angular/common/http'
 })
 export class GifService {
 
-  constructor(public http: HttpClient) { }
+  constructor(private http: HttpClient) { }
+  
    getTrendingGifs(){
     return this.http.get('http://api.giphy.com/v1/gifs/trending?api_key=SXcUYUeKYmkLK6ZqdjBAeG7QoZg7LLG5')
   }
